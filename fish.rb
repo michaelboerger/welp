@@ -3,7 +3,7 @@
 def fish
 puts
 puts "      FISH "
-puts "   #{@f}  "
+puts "  #{@f}  "
 puts "     "
 puts
 wait
@@ -13,7 +13,7 @@ end
 def fish1
 puts
 puts "     FISH CAR "
-puts "   #{@f}   "
+puts "  #{@f}   "
 puts "     O  O"
 puts "     "
 wait
@@ -23,7 +23,7 @@ end
 def fish2
 puts
 puts "     VROOM VROOM! "
-puts "   #{@f}   "
+puts "  #{@f}   "
 puts "     O  O  "
 puts "      "
 wait
@@ -33,7 +33,7 @@ end
 def fish3
 puts
 puts "      "
-puts "  - #{@f}   "
+puts "  -#{@f}   "
 puts "   -  O  O"
 puts "-_-_-_-_-_-_-_-_- "
 wait
@@ -43,7 +43,7 @@ end
 def fish4
 puts
 puts "      "
-puts "  - #{@f}   "
+puts "  -#{@f}   "
 puts "   -  O  O"
 puts "_-_-_-_-_-_-_-_-_ "
 wait
@@ -53,7 +53,7 @@ end
 def fish5
 puts
 puts "     HONK HONK "
-puts "  - #{@f}   "
+puts "  -#{@f}   "
 puts "   -  O  O"
 puts "-_-_-_-_-_-_-_-_- "
 wait
@@ -63,7 +63,7 @@ end
 def fish6
 puts
 puts "    OUT OF MY WAY"
-puts "  - #{@f}  "
+puts "  -#{@f}  "
 puts "   -  O  O"
 puts "_-_-_-_-_-_-_-_-_ "
 wait
@@ -73,7 +73,7 @@ end
 def fish7
 puts
 puts "     I'M A FISH"
-puts "  - #{@f}   "
+puts "  -#{@f}   "
 puts "   -  O  O"
 puts "-_-_-_-_-_-_-_-_- "
 wait
@@ -83,7 +83,7 @@ end
 def fish8
 puts
 puts "     HOOOOONK! "
-puts "  - #{@f}   "
+puts "  -#{@f}   "
 puts "   -  O  O"
 puts "_-_-_-_-_-_-_-_-_ "
 wait
@@ -93,7 +93,7 @@ end
 def fish9
 puts
 puts "       "
-puts "   #{@f}  "
+puts "  #{@f}  "
 puts "     "
 puts "    "
 wait
@@ -104,7 +104,7 @@ end
 def fish10
 puts
 puts "      Sigh... "
-puts "   #{@f}   "
+puts "  #{@f}   "
 puts "     "
 puts ""
 wait
@@ -115,7 +115,7 @@ end
 def fish11
 puts
 puts "      Someday..."
-puts "   #{@f}   "
+puts "  #{@f}   "
 puts "   "
 puts ""
 wait
