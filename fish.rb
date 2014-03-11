@@ -1,78 +1,28 @@
-@f = " ><))))\"> "
-#Laaaaaaazy use of instance variable because NO ONE CAN STOP ME
+f = " ><))))\"> "
+
 counter = 15
-fishray = [ "\n \n  -#{@f}\n   -  O  O",
-  "\n\n  -#{@f}\n   -  O  O",
-  "\n     HONK HONK\n  -#{@f}\n   -  O  O",
-  "\n    OUT OF MY WAY\n  -#{@f}\n   -  O  O",
-  "\n     I'M A FISH\n  -#{@f}\n   -  O  O",
-  "\n     HOOOOONK!\n  -#{@f}\n   -  O  O"]
 
-def fish
-puts
-puts "      FISH "
-puts "  #{@f}  "
-puts "     "
-puts
-wait
-wait
-clear
-end
+start = [
+  "\n      FISH\n  #{f}  ",
+  "\n     FISH CAR\n  #{f}\n     O  O",
+  "\n     LETS GO!\n  #{f}\n     O  O"
+]
 
-def fish1
-puts
-puts "     FISH CAR "
-puts "  #{@f}   "
-puts "     O  O"
-puts "     "
-wait
-wait
-clear
-end
+fishray = [
+  "\n\n  -#{f}\n   -  O  O",
+  "\n     FIIIIIIISH\n  -#{f}\n   -  O  O",
+  "\n     HONK HONK\n  -#{f}\n   -  O  O",
+  "\n    OUT OF MY WAY\n  -#{f}\n   -  O  O",
+  "\n     I'M A FISH\n  -#{f}\n   -  O  O",
+  "\n     HOOOOONK!\n  -#{f}\n   -  O  O"
+]
 
-def fish2
-puts
-puts "     VROOM VROOM! "
-puts "  #{@f}   "
-puts "     O  O  "
-puts "      "
-wait
-wait
-clear
-end
 
-def fish9
-puts
-puts "       "
-puts "  #{@f}  "
-puts "     "
-puts "    "
-wait
-wait
-clear
-end
-
-def fish10
-puts
-puts "      Sigh... "
-puts "  #{@f}   "
-puts "     "
-puts ""
-wait
-wait
-clear
-end
-
-def fish11
-puts
-puts "      Someday..."
-puts "  #{@f}   "
-puts "   "
-puts ""
-wait
-wait
-clear
-end
+fishnish = [
+  "\n\n  #{f}",
+  "\n      Sigh...\n  #{f}",
+  "\n      Someday...\n  #{f}"
+]
 
 def clear
   puts "\e[H\e[2J"
@@ -82,10 +32,17 @@ def wait
   sleep(0.4)
 end
 
+def longwait
+  sleep(0.8)
+end
+
 clear
-fish
-fish1
-fish2
+
+start.each do |row|
+  puts row
+  longwait
+  clear
+end
 
 while counter > 0
   if counter % 2 == 1
@@ -103,18 +60,17 @@ while counter > 0
   end
 end
 
+fishnish.each do |row|
+  puts row
+  longwait
+  clear
+end
 
 clear
-fish9
-fish10
-fish11
 puts "TWIST ENDING"
-wait
-puts ''
-puts "THE FISH WAS DREAMING THE WHOLE TIME"
-wait
-puts ''
-puts "(AND NOT ACTUALLY A CAR)"
+longwait
+puts "\nTHE FISH WAS DREAMING THE WHOLE TIME"
+longwait
+puts "\n(AND NOT ACTUALLY A CAR)"
 sleep(3)
 clear
-
