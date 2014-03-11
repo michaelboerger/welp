@@ -1,4 +1,12 @@
 @f = " ><))))\"> "
+#Laaaaaaazy use of instance variable because NO ONE CAN STOP ME
+counter = 15
+fishray = [ "\n \n  -#{@f}\n   -  O  O",
+  "\n\n  -#{@f}\n   -  O  O",
+  "\n     HONK HONK\n  -#{@f}\n   -  O  O",
+  "\n    OUT OF MY WAY\n  -#{@f}\n   -  O  O",
+  "\n     I'M A FISH\n  -#{@f}\n   -  O  O",
+  "\n     HOOOOONK!\n  -#{@f}\n   -  O  O"]
 
 def fish
 puts
@@ -6,6 +14,7 @@ puts "      FISH "
 puts "  #{@f}  "
 puts "     "
 puts
+wait
 wait
 clear
 end
@@ -17,6 +26,7 @@ puts "  #{@f}   "
 puts "     O  O"
 puts "     "
 wait
+wait
 clear
 end
 
@@ -27,65 +37,6 @@ puts "  #{@f}   "
 puts "     O  O  "
 puts "      "
 wait
-clear
-end
-
-def fish3
-puts
-puts "      "
-puts "  -#{@f}   "
-puts "   -  O  O"
-puts "-_-_-_-_-_-_-_-_- "
-wait
-clear
-end
-
-def fish4
-puts
-puts "      "
-puts "  -#{@f}   "
-puts "   -  O  O"
-puts "_-_-_-_-_-_-_-_-_ "
-wait
-clear
-end
-
-def fish5
-puts
-puts "     HONK HONK "
-puts "  -#{@f}   "
-puts "   -  O  O"
-puts "-_-_-_-_-_-_-_-_- "
-wait
-clear
-end
-
-def fish6
-puts
-puts "    OUT OF MY WAY"
-puts "  -#{@f}  "
-puts "   -  O  O"
-puts "_-_-_-_-_-_-_-_-_ "
-wait
-clear
-end
-
-def fish7
-puts
-puts "     I'M A FISH"
-puts "  -#{@f}   "
-puts "   -  O  O"
-puts "-_-_-_-_-_-_-_-_- "
-wait
-clear
-end
-
-def fish8
-puts
-puts "     HOOOOONK! "
-puts "  -#{@f}   "
-puts "   -  O  O"
-puts "_-_-_-_-_-_-_-_-_ "
 wait
 clear
 end
@@ -128,30 +79,32 @@ def clear
 end
 
 def wait
-  sleep(0.6)
+  sleep(0.4)
 end
 
 clear
 fish
-fish
-fish1
 fish1
 fish2
-fish2
-fish3
-fish4
-fish3
-fish4
-fish5
-fish6
-fish7
-fish8
-fish3
-fish4
-fish5
-fish8
-fish3
-fish4
+
+while counter > 0
+  if counter % 2 == 1
+    puts fishray.sample
+    puts "_-_-_-_-_-_-_-_-_ "
+    counter -= 1
+    wait
+    clear
+  else
+    puts fishray.sample
+    puts "-_-_-_-_-_-_-_-_- "
+    counter -= 1
+    wait
+    clear
+  end
+end
+
+
+clear
 fish9
 fish10
 fish11
