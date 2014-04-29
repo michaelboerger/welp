@@ -1,21 +1,21 @@
 # This is ugly code, I wrote it quick as a last minute addition to my screencast!
 
 def stand
-puts "\n\n   O   "
-puts "  /|\\   "
-puts "   |  "
-puts "  / \\   "
+puts "\n\n           O   "
+puts "          /|\\   "
+puts "           |  "
+puts "          / \\   "
 wait
 end
 
 def wave
-puts "Michael"
-puts "Boerger\n\n"
-puts "   Bye!"
-puts "   O/   "
-puts "  /|   "
-puts "   |  "
-puts "  / \\   "
+puts "        Michael"
+puts "           Boerger\n\n"
+puts "           Bye!"
+puts "           O/   "
+puts "          /|   "
+puts "           |  "
+puts "          / \\   "
 wait
 end
 
@@ -25,12 +25,12 @@ def clear
 end
 
 def wait
-  sleep(0.1)
+  sleep(0.2)
 end
 
 clear
 
-print "M"
+print "        M"
 wait
 print "i"
 wait
@@ -44,7 +44,7 @@ print "e"
 wait
 puts "l"
 wait
-print "B"
+print "           B"
 wait
 print "o"
 wait
@@ -58,7 +58,7 @@ print "e"
 wait
 puts "r"
 stand
-sleep(1)
+sleep(3)
 clear
 wave
 sleep(5)
